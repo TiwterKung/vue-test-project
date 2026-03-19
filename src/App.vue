@@ -1,11 +1,22 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useCounterStore } from '../src/stores/counter'
+import HeaderView from "../src/view/header.vue";
+import FooterView from "../src/view/footer.vue"
+
+const counter = useCounterStore()
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
-</template>
+  <HeaderView />
+  <div style="padding: 20px 20px;">
+    <p>{{ counter.message }}</p>
+  <p>{{ counter.count }}</p>
 
-<style scoped></style>
+  <button @click="counter.changeMessage">
+    Message
+  </button>
+  <button @click="counter.increment">Add</button>
+  </div>
+  
+  <FooterView />
+</template>
