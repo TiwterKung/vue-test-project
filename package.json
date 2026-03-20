@@ -12,6 +12,7 @@
     "format": "oxfmt src/"
   },
   "dependencies": {
+    "@mdi/js": "^7.4.47",
     "pinia": "^3.0.4",
     "vue": "beta",
     "vue-router": "^5.0.3"

@@ -1,4 +1,5 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
 <template>
     <header>
       <nav>
@@ -14,10 +15,10 @@
       <nav class="Top-menu">
         <div><strong style="font-size: 20px">Exclusive</strong></div>
         <ul>
-          <li onclick="link('Home')">Home</li>
-          <li onclick="link('Contact')">Contact</li>
-          <li onclick="link('About')">About</li>
-          <li onclick="link('SignUp')">Sign up</li>
+          <RouterLink to="/" class="Header1"><li>Home</li></RouterLink>
+          <RouterLink to="/contact" class="Header1"><li>Contact</li></RouterLink>
+          <RouterLink to="/about" class="Header1"><li>About</li></RouterLink>
+          <RouterLink to="/login" class="Header1"><li>Sign up</li></RouterLink>
         </ul>
         <div class="search-input">
           <input
@@ -35,7 +36,16 @@
     </header>
 </template>
 <style>
-body,
+.Header1 {
+  text-decoration: none;
+  color: black;
+}
+
+.Header1:hover{
+  text-decoration: none;
+  color: red;
+}
+
 html {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
