@@ -18,7 +18,7 @@
           <RouterLink to="/" class="Header1"><li>Home</li></RouterLink>
           <RouterLink to="/contact" class="Header1"><li>Contact</li></RouterLink>
           <RouterLink to="/about" class="Header1"><li>About</li></RouterLink>
-          <RouterLink to="/login" class="Header1"><li>Sign up</li></RouterLink>
+          <RouterLink to="/signup" class="Header1"><li>Sign up</li></RouterLink>
         </ul>
         <div class="search-input">
           <input
