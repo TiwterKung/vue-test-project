@@ -24,13 +24,10 @@
         Already have account?
         <RouterLink to="login"><button class="buttonlogin">Login</button></RouterLink>
       </div>
-      <!-- <div class="row">
-          <div class="box1"></div>
-          <div>Smart</div>
-        </div> -->
     </div>
   </main>
 </template>
+
 <style scoped>
 .font {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

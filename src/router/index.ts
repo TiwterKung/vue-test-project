@@ -28,7 +28,20 @@ const router = createRouter({
         {
           path : 'signup',
           component: () => import('@/view/SignupView.vue')
+        },
+        {
+          path : 'test',
+          component: () => import('@/view/TestView.vue')
+        },
+        {
+          path : 'axios',
+          component: () => import('@/view/AxiosView.vue')
+        },
+        {
+          path : 'product',
+          component: () => import('@/view/ProductVuew.vue')
         }
+
       ]
     },
     // {

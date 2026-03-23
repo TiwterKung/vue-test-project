@@ -27,6 +27,10 @@
     })
 </script>
 <template>
+  <div><RouterLink to="test"><button>TestView</button></RouterLink></div>
+  <div><RouterLink to="axios"><button>AxiosView</button></RouterLink></div>
+  <div><RouterLink to="product"><button>Producr</button></RouterLink></div>
+  
   <div style="padding: 20px 20px;">
     <p>{{ counter.message }}</p>
     <p>{{ counter.count }}</p>
@@ -74,8 +78,8 @@
     <div v-for="p in filteredProducts" :key="p.id">
       <p>{{ p.name }} - {{ p.price }}</p>
 
-      <p v-if="p.stock > 0">✔️ มีสินค้า</p>
-      <p v-else>❌ หมด</p>
+      <p v-if="p.stock > 0">มีสินค้า</p>
+      <p v-else>หมด</p>
     </div>
   </div>
 </template>
